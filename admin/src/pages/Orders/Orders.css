@@ -27,7 +27,7 @@
     outline: none;
 }
 
-@media (max-width:1000px) {
+/* @media (max-width:1000px) {
     .order-item{
         font-size: 12px;
         grid-template-columns: 0.5fr 2fr 1fr;
@@ -40,4 +40,28 @@
     .order-item img{
         width: 40px;
     }
+} */
+@media (max-width: 900px) {
+  .order-item {
+    grid-template-columns: 1fr;   /* Stack vertically */
+    font-size: 13px;
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .order-item img {
+    width: 50px;
+  }
+
+  .order-item select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .order-item-name,
+  .order-item-address,
+  .order-item-food {
+    margin-top: 0;
+  }
 }
